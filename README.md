@@ -7,7 +7,6 @@ The documentation corresponds to version 3 of the TMDB API.
 Here’s a summary of key endpoints commonly used:
 
 GET /movie/{movie_id} — Fetch details like title, overview, release date, etc. Supports appending extra responses such as videos. 
-Reddit
 The Movie Database (TMDB)
 
 GET /discover/movie — Search and filter movies with advanced options . search by genre, release date, language, and more.
