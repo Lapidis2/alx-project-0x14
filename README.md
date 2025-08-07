@@ -30,3 +30,12 @@ TMDB uses API key-based authentication. You'll need to:
  you will Log into your TMDB account and register for an API key (v3).
 
 Include it as a query parameter (api_key=YOUR_KEY_HERE) in your requests or sometimes in the headers.
+
+
+## Error Handling
+Common errors include:
+
+Invalid API key – returns an error code and "Invalid API key" message. 
+imvalid endpoint – returns a 404 Not Found error.
+Invalid parameters – returns a 400 Bad Request error with details on the issue.
+Exceeding rate limits – TMDB has a rate limit of 40 requests per 10 seconds for the public API. If you exceed this, you will receive a 429 Too Many Requests error with a message indicating the limit has been reached.
