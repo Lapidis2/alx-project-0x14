@@ -10,7 +10,7 @@ export default async function handler(
       const { year, page, genre } = request.body;
       const date = new Date();
 
-      // Clean genre string
+   
       const genreParam = genre ? `&genre=${genre}` : "";
 
       const url = `https://moviesdatabase.p.rapidapi.com/titles?year=${
