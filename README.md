@@ -16,3 +16,10 @@ The Movie Database (TMDB)
 
 Other Endpoints:
 Under the broader TMDB API, you can also retrieve data on actors, TV shows, account details, and images. 
+
+## Request and Response Format
+Request Structure is Typically a RESTful GET with query params, e.g.:
+https://api.themoviedb.org/3/movie/343611?api_key=YOUR_KEY&append_to_response=videos
+
+Response Structure: JSON including fields like id, title, overview, videos (populated when append_to_response is used).
+it comes as objects with fields like id, title, overview, and videos (when append_to_response is used).
