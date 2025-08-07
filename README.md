@@ -23,3 +23,10 @@ https://api.themoviedb.org/3/movie/343611?api_key=YOUR_KEY&append_to_response=vi
 
 Response Structure: JSON including fields like id, title, overview, videos (populated when append_to_response is used).
 it comes as objects with fields like id, title, overview, and videos (when append_to_response is used).
+
+## Authentication
+TMDB uses API key-based authentication. You'll need to:
+
+ you will Log into your TMDB account and register for an API key (v3).
+
+Include it as a query parameter (api_key=YOUR_KEY_HERE) in your requests or sometimes in the headers.
