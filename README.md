@@ -38,3 +38,14 @@ Invalid API key – returns an error code and "Invalid API key" message.
 imvalid endpoint – returns a 404 Not Found error.
 Invalid parameters – returns a 400 Bad Request error with details on the issue.
 Exceeding rate limits – TMDB has a rate limit of 40 requests per 10 seconds for the public API. If you exceed this, you will receive a 429 Too Many Requests error with a message indicating the limit has been reached.
+
+
+## Usage Limits and Best Practices
+TMDB enforces rate limits, so batch requests or use proper intervals for frequent queries. 
+The Movie Database (TMDB)
+TMDB has a rate limit of around 40 requests per 10 seconds for the public API
+Use append_to_response for efficient data retrieval (e.g., combine main details with related media like videos).
+
+Cache configuration data (like base URLs) locally rather than fetching every time to reduce overhead.
+
+Always validate request parameters to avoid unnecessary errors.
